@@ -1,0 +1,19 @@
+{
+    "server": {
+      "port": 3000
+    },
+    "firebase": {
+      "client_id": "896192510998-26lofha1h9lehlo1ofq4llhhfaualul9.apps.googleusercontent.com",
+      "client_secret": "LLZQYK2pOCf4gph_pKhu5L0o",
+      "login_dialog_uri": "",
+      "oauth_redirect_uri": "/auth/google/callback",
+      "access_token_uri": "",
+      "scopes": [
+        "https://www.googleapis.com/auth/plus.login",
+        "https://www.googleapis.com/auth/plus.profile.emails.read"
+      ],
+      "response_type": "code",
+      "grant_type": "authorization_code"
+    }    
+  }
+  
