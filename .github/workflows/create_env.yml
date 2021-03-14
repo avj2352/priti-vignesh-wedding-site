@@ -1,0 +1,42 @@
+# Create a default.json environment file under backend/config/ folder
+# Add Environment Variables from Repository Secrets
+name: Create env file
+on: 
+  push:
+    branches:
+      - dev
+   
+jobs:
+  run:
+    name: Create env file
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+
+      - name: Create default.json file
+        run: |
+          echo -n "" > backend/config/default.json
+          cat <<EOT >> backend/config/default.json
+          {
+            "server": {
+              "port": ${{secrets.SERVER_PORT}}
+            },
+            "firebase": {
+              "apiKey": "${{secrets.FIREBASE_API_KEY}}",
+              "authDomain": "${{secrets.FIREBASE_AUTH_DOMAIN}}",
+              "databaseURL": "${{secrets.FIREBASE_DB_URL}}",
+              "projectId": "${{secrets.FIREBASE_PROJECT_ID}}",
+              "storageBucket": "${{secrets.FIREBASE_STORAGE_BUCKET}}",
+              "messagingSenderId": "${{secrets.FIREBASE_MESSAGE_SENDER_ID}}",
+              "appId":"${{secrets.FIREBASE_APP_ID}}"
+            }
+          }
+          EOT
+      - name: Commit changes
+        uses: EndBug/add-and-commit@v7
+        with:
+          author_name: Pramod AJ
+          author_email: avj2352@gmail.com
+          message: 'Adding Environment file'
+          add: '*.json'
