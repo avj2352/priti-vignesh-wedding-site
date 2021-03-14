@@ -1,0 +1,15 @@
+{
+  "server": {
+    "port": 3000
+  },
+  "firebase": {
+    "apiKey": "AIzaSyA9G55AYPxsrdornhY-TKjCfr-lF3I1ZjA",
+    "authDomain": "shruthi-sudheer-wedding-site.firebaseapp.com",
+    "databaseURL": "https://shruthi-sudheer-wedding-site-default-rtdb.firebaseio.com/",
+    "projectId": "shruthi-sudheer-wedding-site",
+    "storageBucket": "shruthi-sudheer-wedding-site.appspot.com",
+    "messagingSenderId": "181213446713",
+    "appId":"1:181213446713:web:ceb5dcff6fd4157a3a03e8"
+  }    
+}
+  

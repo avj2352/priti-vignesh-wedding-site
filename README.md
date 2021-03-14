@@ -1,3 +1,6 @@
-# Wedding Website of Vignesh & Priti
+# Shruthi weds Sudheer - Simple Wedding Site
 
-Scripts: `priti-hearts-vignesh.surge.sh`
+## Important Links
+- [Coolors.co](https://coolors.co)
+- [Firebase DB](https://console.firebase.google.com)
+
