@@ -5,8 +5,8 @@ export class EventService {
 
     constructor() {
         this.logger = `EventService`;
-        console.log(`${this.logger} - initializing`.help);
-        this.eventRef = firebaseApp.database().ref("events");
+        console.log(`${this.logger} - initialized`.help);
+        this.eventRef = firebaseApp.database().ref("/events");
         // binding
         this.getEvents = this.getEvents.bind(this);
     }

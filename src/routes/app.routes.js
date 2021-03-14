@@ -11,7 +11,11 @@ const routes = (app) => {
 
     // MESSAGES ==========================
     app.route('/messages')
-        .get(msg.getMessages);
+        .get(msg.getMessages)
+        .post(msg.postMessage);
+    
+    app.route('/messages/updatelike/:dateId')
+        .put(msg.updateLike);
 };
 
 export default routes;

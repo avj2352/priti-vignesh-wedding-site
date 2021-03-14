@@ -6,8 +6,8 @@ export class MessageService {
     
     constructor() {
         this.logger = 'MessageService';
-        console.log(`${this.logger} - initializing`.help);
-        this.messageRef = firebaseApp.database().ref("messages");
+        console.log(`${this.logger} - initialized`.help);
+        this.messageRef = firebaseApp.database().ref("/messages");
         // binding
         this.getAllMessages = this.getAllMessages.bind(this);
         this.saveMessage = this.saveMessage.bind(this);
@@ -36,19 +36,19 @@ export class MessageService {
 
     /**
      * API call to store a new chat message
-     * @parms { name, comment }
+     * @parms { name, message }
      * @returns Promise <any>
      */
     saveMessage (input) {
         console.log(`${this.logger} - storing message - ${JSON.stringify(input)}`.help);
         const data = { 
-            comment:input.comment, 
+            message: input.message, 
             date: firebase.database.ServerValue.TIMESTAMP,
-            like:0, 
-            name:input.name 
+            like: 0, 
+            name: input.name 
         };   
-        return new Promise(function (resolve, reject) {
-            setTimeout(function () {
+        return new Promise((resolve, reject)=>{
+            setTimeout(()=>{
                 this.messageRef.push(data)
                     .then(resolve, reject);
             }, 1);
