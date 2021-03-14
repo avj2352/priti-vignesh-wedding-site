@@ -16,8 +16,8 @@ jobs:
 
       - name: Create default.json file
         run: |
-          echo -n "" > backend/config/default.json
-          cat <<EOT >> backend/config/default.json
+          echo -n "" > config/default.json
+          cat <<EOT >> config/default.json
           {
             "server": {
               "port": ${{secrets.SERVER_PORT}}
