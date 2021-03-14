@@ -25,10 +25,11 @@
     "prettier": "^1.18.2"
   },
   "dependencies": {
+    "colors": "^1.4.0",
     "config": "^3.3.6",
     "express": "^4.17.1",
     "firebase": "^8.3.0",
-    "colors": "^1.4.0"
+    "firebase-admin": "^9.5.0"
   },
   "repository": {
     "type": "git",

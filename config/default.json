@@ -1,19 +1,15 @@
 {
-    "server": {
-      "port": 3000
-    },
-    "firebase": {
-      "client_id": "896192510998-26lofha1h9lehlo1ofq4llhhfaualul9.apps.googleusercontent.com",
-      "client_secret": "LLZQYK2pOCf4gph_pKhu5L0o",
-      "login_dialog_uri": "",
-      "oauth_redirect_uri": "/auth/google/callback",
-      "access_token_uri": "",
-      "scopes": [
-        "https://www.googleapis.com/auth/plus.login",
-        "https://www.googleapis.com/auth/plus.profile.emails.read"
-      ],
-      "response_type": "code",
-      "grant_type": "authorization_code"
-    }    
-  }
+  "server": {
+    "port": 3000
+  },
+  "firebase": {
+    "apiKey": "AIzaSyA9G55AYPxsrdornhY-TKjCfr-lF3I1ZjA",
+    "authDomain": "shruthi-sudheer-wedding-site.firebaseapp.com",
+    "databaseURL": "https://shruthi-sudheer-wedding-site-default-rtdb.firebaseio.com/",
+    "projectId": "shruthi-sudheer-wedding-site",
+    "storageBucket": "shruthi-sudheer-wedding-site.appspot.com",
+    "messagingSenderId": "181213446713",
+    "appId":"1:181213446713:web:ceb5dcff6fd4157a3a03e8"
+  }    
+}
   

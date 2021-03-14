@@ -6,9 +6,39 @@
  */
 const config = require('config');
 const serverConfig = config.get('server');
+const firebaseConfg = config.get('firebase');
  
- // MAIN ==============================================
- 
- export function getPORT () {
+// MAIN ==============================================
+export function getPORT () {
      return process.env.PORT || serverConfig.port;
- }
+}
+
+// FIREBASE RELATED =================================
+export function getFirebaseAppId() {
+    return process.env.firebaseAppId || firebaseConfg.appId;
+}
+
+export function getFirebaseAPIKey() {
+    return process.env.firebaseAPIKey || firebaseConfg.apiKey;
+}
+
+export function getFirebaseAuthDomain() {
+    return process.env.firebaseAuthDomain || firebaseConfg.authDomain;
+}
+
+export function getFirebaseDatabaseURL() {
+    return process.env.firebaseDatabaseURL || firebaseConfg.databaseURL;
+}
+
+export function getFirebaseProjectId() {
+    return process.env.firebaseProjectId || firebaseConfg.projectId;
+}
+
+export function getFirebaseStorageBucket() {
+    return process.env.firebaseStorageBucket || firebaseConfg.storageBucket;
+}
+
+export function getFirebaseMessagingSenderId() {
+    return process.env.firebaseMessagingSenderId || firebaseConfg.messagingSenderId;
+}
+
