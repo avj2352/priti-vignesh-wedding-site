@@ -3344,7 +3344,7 @@ h2.gla_slide_title:after {
 
 .gla_flower2:after {
     background: url(../images/flower2.png);
-    width: 485px;
+    width: 490px;
     height: 485px;
     -webkit-background-size: cover;
     background-size: cover;
@@ -3378,6 +3378,8 @@ h2.gla_slide_title:after {
 }
 
 .gla_flower2_name_l {
+    display: block;
+    padding: 8px;
     position: absolute;
     font: 400 100px/100px marsha;
     right: 100%;
@@ -3387,6 +3389,7 @@ h2.gla_slide_title:after {
 }
 
 .gla_flower2_name_r {
+    display: block;
     position: absolute;
     font: 400 100px/100px marsha;
     left: 100%;
@@ -6393,6 +6396,12 @@ footer {
     .mega-menu-col-header {
         color: #fff;
         margin: 20px 0;
+    }
+}
+
+@media (max-width:1140px) {
+    .gla_flower2_name_l, .gla_flower2_name_r {
+        display: none;
     }
 }
 
