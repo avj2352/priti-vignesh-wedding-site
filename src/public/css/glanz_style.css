@@ -108,6 +108,10 @@ body {
     height: 100vh;
 }
 
+h4 {
+    margin: 4px;
+}
+
 ol,
 ul {
     margin-bottom: 30px;
