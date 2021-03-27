@@ -40,7 +40,7 @@ export class MessageService {
      * @returns Promise <any>
      */
     saveMessage (input) {
-        console.log(`${this.logger} - storing message - ${JSON.stringify(input)}`.help);
+        // console.log(`${this.logger} - storing message - ${JSON.stringify(input)}`.help);
         const data = { 
             message: input.message, 
             date: firebase.database.ServerValue.TIMESTAMP,

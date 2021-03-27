@@ -4,3 +4,10 @@
 - [Coolors.co](https://coolors.co)
 - [Firebase DB](https://console.firebase.google.com)
 
+
+# Details
+
+- #date_header
+- #venude_header
+
+

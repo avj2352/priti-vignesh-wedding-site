@@ -1,3 +1,4 @@
+require('../util/colors');
 import { MessageService } from '../services/message.service';
 
 export class MessageController {
@@ -48,11 +49,11 @@ export class MessageController {
     async postMessage (req, res) {
         if (this.validatePayload(req)) return res.status(400).send('Invalid payload');
         try {
-            const result = await this.messageService.saveMessage ({
+            await this.messageService.saveMessage ({
                 name: req.body.name,
                 message: req.body.message
             });
-            console.log(`${this.logger} - New Record added`, result);
+            console.log(`${this.logger} - New Record added`.success);
             return res.status(201).send('New Record Added');
         } catch (err) {            
             console.log(`${this.logger} Internal Server error: ${JSON.stringify(err)}`.error);

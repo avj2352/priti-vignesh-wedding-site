@@ -1,8 +1,10 @@
-import { EventController } from '../controllers/event.controller.js';
-import { MessageController } from '../controllers/message.controller.js';
+import { EventController } from '../controllers/event.controller';
+import { MessageController } from '../controllers/message.controller';
+import { GalleryController } from '../controllers/gallery.controller'
 
 const event = new EventController();
 const msg = new MessageController();
+const gallery = new GalleryController();
 
 const routes = (app) => {
     // EVENTS ============================
@@ -16,6 +18,10 @@ const routes = (app) => {
     
     app.route('/messages/updatelike/:dateId')
         .put(msg.updateLike);
+
+    // GALLERY ===========================
+    app.route('/gallery')
+        .get(gallery.getImages);
 };
 
 export default routes;
