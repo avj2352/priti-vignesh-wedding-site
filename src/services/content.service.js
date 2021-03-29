@@ -1,21 +1,21 @@
 require('../util/colors');
 import { firebaseApp } from '../util/firebase.config';
 
-export class EventService {
+export class ContentService {
 
     constructor() {
-        this.logger = `EventService`;
+        this.logger = `ContentService`;
         console.log(`${this.logger} - initialized`.help);
-        this.eventRef = firebaseApp.database().ref("/events");
+        this.eventRef = firebaseApp.database().ref("/content");
         // binding
-        this.getEvents = this.getEvents.bind(this);
+        this.getContent = this.getContent.bind(this);
     }
 
     /**
      * API to retrieve event details
      * @returns Promise
      */
-    getEvents() {
+    getContent() {
         const promise = new Promise((resolve, reject) => {
             try {
                 this.eventRef

@@ -1,0 +1,28 @@
+.quick_links_section {
+    /* border: 1px solid green; */
+    margin-top: 50px;
+    width: 85%;
+    display: flex;
+    justify-content: center;
+}
+
+.quick_links_section ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+}
+
+.quick_links_section ul li {
+    cursor: pointer;
+    margin: 0 15px;
+}
+
+@media(min-width: 799px) {
+    .quick_links_section {
+        /* border: 1px solid green; */
+        width: 95%;
+        display: flex;
+        justify-content: center;
+    }   
+}

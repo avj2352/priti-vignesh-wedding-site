@@ -1,24 +1,24 @@
 require('../util/colors');
 import { firebaseApp } from '../util/firebase.config';
 
-export class EventService {
+export class GalleryService {
 
     constructor() {
-        this.logger = `EventService`;
+        this.logger = `GalleryService`;
         console.log(`${this.logger} - initialized`.help);
-        this.eventRef = firebaseApp.database().ref("/events");
+        this.galleryRef = firebaseApp.database().ref("/gallery");
         // binding
-        this.getEvents = this.getEvents.bind(this);
+        this.getImages = this.getImages.bind(this);
     }
 
     /**
-     * API to retrieve event details
+     * API to retrieve gallery image links
      * @returns Promise
      */
-    getEvents() {
+    getImages() {
         const promise = new Promise((resolve, reject) => {
             try {
-                this.eventRef
+                this.galleryRef
                 .on('value', (snapshot)=>{
                     resolve(snapshot.val());
                 });
