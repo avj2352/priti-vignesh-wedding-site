@@ -18,6 +18,23 @@
     margin: 0 15px;
 }
 
+h3#invitationContent {
+    margin: 0px auto;
+}
+
+.gla_round_block a {
+    font-weight: bold;
+    color: rgb(136, 10, 84);
+} 
+
+.gla_round_block a:hover {
+    text-decoration: none;
+}
+
+.gla_round_block a>img {
+    width: 10%;
+}
+
 @media(min-width: 799px) {
     .quick_links_section {
         /* border: 1px solid green; */

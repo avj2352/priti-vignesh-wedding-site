@@ -120,23 +120,23 @@
                             height="150" alt="">
                     </p>
                     <h2>Wedding Bells</h2>
-                    <h3>
+                    <h3 id="scriptureContent">
                         &quot;
                         And we know that in all things God works for the good of those who love him, 
                         who have been called according to his purpose.
                         &quot;
                     </h3>
-                    <h4>Romans 8:28</h4>
+                    <h4 id="scriptureVerse">Romans 8:28</h4>
                     <section class="quick_links_section">
                         <ul>
                             <li>
-                                <a href="#">Save the Date</a>
+                                <a href="#date_header">Save the Date</a>
                             </li>
                             <li>
-                                <a href="#">The Invitation</a>
+                                <a href="#invitationContent">The Invitation</a>
                             </li>
                             <li>
-                                <a href="#">Wedding Details</a>
+                                <a href="#eventDetails">When &amp; Where</a>
                             </li>
                             <li>
                                 <a href="#">Wedding Wishes</a>
@@ -164,7 +164,7 @@
                             alt="">
                     </p>
                     <h2 id="date_header" class="date_field">Loading...</h2>
-                    <h3 class="gla_subtitle" id="venue_header">
+                    <h3 class="gla_subtitle" id="venueHeader">
                         Venue Details
                     </h3>
                     <div class="gla_countdown" data-year="2021" data-month="04" data-day="23"></div>
@@ -184,21 +184,12 @@
                     </p>
                     <h2>The Invitation</h2>
 
-                    <!-- grid -->
-                    <div class="gla_portfolio_no_padding grid" id="wishList">
-
-                    </div>
-                    <!-- grid end -->
-
+                    <h3 id="invitationContent">
+                        Venue Details
+                    </h3>
 
                 </div>
                 <!-- container end -->
-
-            </section>
-            <!-- section end -->
-
-            <!-- section -->
-            <section class="gla_section">
 
 
                 <div class="container text-center">
@@ -206,36 +197,46 @@
                         <img src="./images/animations/flower6.gif" data-bottom-top="@src:images/animations/flower6.gif; opacity:1" class="gla_animated_flower"
                             height="110" alt="">
                     </p>
-                    <h2>Wedding Details</h2>
-                    <h3 class="gla_subtitle">When & Where</h3>
-                    <h3>KNT Mahal
-                        <br> Opp. to Arch Gate
-                        <br> Rainbow Nagar
-                        <br> Neyveli
-                        <br> Tamil Nadu</h3>
-                    <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.8796025081015!2d79.54782741467949!3d11.631928491744508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a54b09838e06ce9%3A0x329edf86505a20f9!2sKNT+MAHAL+A%2FC!5e0!3m2!1sen!2sin!4v1527691353438"></iframe>
-                    <br />
-                    <div class="row text-center">
+                    <h2>When &amp; Where</h2>                    
+                    <div id="eventDetails" class="row text-center">
                         <div class="col-md-4 gla_round_block">
-                            <div class="gla_round_im gla_image_bck" data-image="./images/background.jpg"></div>
-                            <h2 class="hidden-md hidden-lg">The Regal Reception</h2>
-                            <h3 class="hidden-xs hidden-sm">The Regal Reception</h3>
-                            <h3>June 16, 2018
-                                <br>6:00 PM – 10:00 PM</p>
+                            <div class="gla_round_im gla_image_bck" data-image="./images/wedding-ring.png"></div>
+                            <h2 class="hidden-md hidden-lg">The Wedding</h2>
+                            <h3 class="hidden-xs hidden-sm">The Wedding</h3>
+                            <h3 id="weddingLocation">Wedding Location</h3>
+                            <h3 id="weddingTimings">Timings: 11 AM</h3>
+                            <h4 id="weddingAddress">Wedding Address</h4>
+                            <p>
+                                <a id="weddingMap" href="#" rel="wedding-map">
+                                    <img src="./images/map.png"/> Map Location
+                                </a>
+                            </p>
                         </div>
                         <div class="col-md-4 gla_round_block">
-                            <div class="gla_round_im gla_image_bck" data-image="./images/background.jpg"></div>
-                            <h2 class="hidden-md hidden-lg">The TamilNadu Traditional</h2>
-                            <h3 class="hidden-xs hidden-sm">The TamilNadu Traditional</h3>
-                            <h3>June 17, 2018
-                                <br>7:30 AM – 9:00 AM</p>
+                            <div class="gla_round_im gla_image_bck" data-image="./images/lunch.png"></div>
+                            <h2 class="hidden-md hidden-lg">Luncheon</h2>
+                            <h3 class="hidden-xs hidden-sm">Luncheon</h3>
+                            <h3 id="lunchLocation">Lunch Location</h3>
+                            <h3 id="lunchTimings">Timings: 11 AM</h3>
+                            <h4 id="lunchAddress">Lunch Address</h4>
+                            <p>
+                                <a id="lunchMap" href="#" rel="lunch-map">
+                                    <img src="./images/map.png"/> Map Location
+                                </a>
+                            </p>
                         </div>
                         <div class="col-md-4 gla_round_block">
-                            <div class="gla_round_im gla_image_bck" data-image="./images/background.jpg"></div>
-                            <h2 class="hidden-md hidden-lg">The Bihar Bonanza</h2>
-                            <h3 class="hidden-xs hidden-sm">The Bihar Bonanza</h3>
-                            <h3>June 17, 2018
-                                <br>6:00 PM – 10:00 PM</h3>
+                            <div class="gla_round_im gla_image_bck" data-image="./images/reception.png"></div>
+                            <h2 class="hidden-md hidden-lg">The Reception</h2>
+                            <h3 class="hidden-xs hidden-sm">The Reception</h3>
+                            <h3 id="receptionLocation">Reception Location</h3>
+                            <h3 id="receptionTimings">Timings: 11 AM</h3>
+                            <h4 id="receptionAddress">Reception Address</h4>
+                            <p>
+                                <a id="receptionMap" href="#" rel="reception-map">
+                                    <img src="./images/map.png"/> Map Location
+                                </a>
+                            </p>
                         </div>
                     </div>
 
@@ -253,40 +254,42 @@
                 <div class="gla_over" data-color="#1e1d2d" data-opacity="0.4"></div>
 
                 <div class="container text-center">
-                    <p>
-                        <img src="./images/animations/rsvp_wh.gif" data-bottom-top="@src:images/animations/rsvp_wh.gif" height="200" alt="">
-                    </p>
-
                     <div class="row">
-                        <div class="col-md-8 col-md-push-2">
-                            <form id="newWish">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <label>
-                                            <h3>Your name*</h3>
-                                        </label>
-                                        <input type="text" id="wishname" name="name" class="form-control form-opacity">
+                        <div class="col-md-6"></div>
+                        <div class="col-md-6">
+                            <p>
+                                <img src="./images/animations/rsvp_wh.gif" data-bottom-top="@src:images/animations/rsvp_wh.gif" height="200" alt="">
+                            </p>
+                            <div class="col-md-12">
+                                <form id="newWish">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <label>
+                                                <h3>Your name*</h3>
+                                            </label>
+                                            <input type="text" id="wishname" name="name" class="form-control form-opacity">
+                                        </div>                                        
+                                        <div class="col-md-12">
+                                            <label>
+                                                <h3>Your Wishes</h3>
+                                            </label>
+                                            <textarea name="message" id="wishmsg" class="form-control form-opacity"></textarea>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <h4>
+                                                <input type="checkbox" name="isAttending"/>
+                                                Will you be attending the event ?
+                                            </h4>                                            
+                                        </div>
+                                        <div class="col-md-12">
+                                            <input type="submit" class="btn submit" value="Send">
+                                        </div>
                                     </div>
-                                    <div class="col-md-6">
-                                        <label>
-                                            <h3>Your e-mail*</h3>
-                                        </label>
-                                        <input type="text" id="wishemail" name="email" class="form-control form-opacity">
-                                    </div>
-                                    <div class="col-md-12">
-                                        <label>
-                                            <h3>Your Wishes</h3>
-                                        </label>
-                                        <textarea name="message" id="wishmsg" class="form-control form-opacity"></textarea>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <input type="submit" class="btn submit" value="Send">
-                                    </div>
+                                </form>
+                                <div class="col-md-12" id="successMsg">
+                                    <h3>Thanks for your wishes!!!</h3>
+                                    <h3>Come join us soon on the Celebrations!!!</h3>
                                 </div>
-                            </form>
-                            <div class="col-md-12" id="successMsg">
-                                <h3>Thanks for your wishes!!!</h3>
-                                <h3>Come join us soon on the Celebrations!!!</h3>
                             </div>
                         </div>
                     </div>

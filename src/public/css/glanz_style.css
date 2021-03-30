@@ -1504,7 +1504,7 @@ label.error {
 
 .gla_section .container {
     padding-top: 132px;
-    padding-bottom: 128px;
+    padding-bottom: 38px;
 }
 
 .gla_lg_padding .container {
@@ -3812,11 +3812,10 @@ video#video_background {
 /*Round Image*/
 
 .gla_round_im {
-    width: 250px;
-    height: 250px;
+    width: 100px;
+    height: 100px;
     display: inline-block;
     margin: 0 auto 20px;
-    border-radius: 50%;
     position: relative;
     z-index: 1;
 }
@@ -6550,7 +6549,7 @@ footer {
     }
     .gla_section .container {
         padding-top: 56px;
-        padding-bottom: 46px;
+        padding-bottom: 16px;
     }
     header nav {
         height: 52px;
