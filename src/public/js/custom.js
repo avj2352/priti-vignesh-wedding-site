@@ -49,6 +49,7 @@
          */
         function resetMessageDom () {
             $("#successMsg").hide();
+            // $("#newWish").hide();
         }
         
         /**

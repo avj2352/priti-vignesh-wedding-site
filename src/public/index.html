@@ -254,40 +254,42 @@
                 <div class="gla_over" data-color="#1e1d2d" data-opacity="0.4"></div>
 
                 <div class="container text-center">
-                    <p>
-                        <img src="./images/animations/rsvp_wh.gif" data-bottom-top="@src:images/animations/rsvp_wh.gif" height="200" alt="">
-                    </p>
-
                     <div class="row">
-                        <div class="col-md-8 col-md-push-2">
-                            <form id="newWish">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <label>
-                                            <h3>Your name*</h3>
-                                        </label>
-                                        <input type="text" id="wishname" name="name" class="form-control form-opacity">
+                        <div class="col-md-6"></div>
+                        <div class="col-md-6">
+                            <p>
+                                <img src="./images/animations/rsvp_wh.gif" data-bottom-top="@src:images/animations/rsvp_wh.gif" height="200" alt="">
+                            </p>
+                            <div class="col-md-12">
+                                <form id="newWish">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <label>
+                                                <h3>Your name*</h3>
+                                            </label>
+                                            <input type="text" id="wishname" name="name" class="form-control form-opacity">
+                                        </div>                                        
+                                        <div class="col-md-12">
+                                            <label>
+                                                <h3>Your Wishes</h3>
+                                            </label>
+                                            <textarea name="message" id="wishmsg" class="form-control form-opacity"></textarea>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <h4>
+                                                <input type="checkbox" name="isAttending"/>
+                                                Will you be attending the event ?
+                                            </h4>                                            
+                                        </div>
+                                        <div class="col-md-12">
+                                            <input type="submit" class="btn submit" value="Send">
+                                        </div>
                                     </div>
-                                    <div class="col-md-6">
-                                        <label>
-                                            <h3>Your e-mail*</h3>
-                                        </label>
-                                        <input type="text" id="wishemail" name="email" class="form-control form-opacity">
-                                    </div>
-                                    <div class="col-md-12">
-                                        <label>
-                                            <h3>Your Wishes</h3>
-                                        </label>
-                                        <textarea name="message" id="wishmsg" class="form-control form-opacity"></textarea>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <input type="submit" class="btn submit" value="Send">
-                                    </div>
+                                </form>
+                                <div class="col-md-12" id="successMsg">
+                                    <h3>Thanks for your wishes!!!</h3>
+                                    <h3>Come join us soon on the Celebrations!!!</h3>
                                 </div>
-                            </form>
-                            <div class="col-md-12" id="successMsg">
-                                <h3>Thanks for your wishes!!!</h3>
-                                <h3>Come join us soon on the Celebrations!!!</h3>
                             </div>
                         </div>
                     </div>
