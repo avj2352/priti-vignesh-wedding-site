@@ -35,6 +35,15 @@ h3#invitationContent {
     width: 10%;
 }
 
+.validationText {
+    color:rgb(255, 234, 50);
+    display: none;
+}
+
+#successMsg {
+    display: none;
+}
+
 @media(min-width: 799px) {
     .quick_links_section {
         /* border: 1px solid green; */
