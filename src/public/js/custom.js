@@ -243,7 +243,7 @@
         function hideLoadingScreen () {
             const chatContainerDom = document.getElementById('chatReadSection');
             const loadingDom = document.querySelector('#chatReadSection>div.loading-screen');
-            chatContainerDom.removeChild(loadingDom);
+            if (loadingDom) chatContainerDom.removeChild(loadingDom);
         }
 
         /**
@@ -281,7 +281,7 @@
                         return displaySuccess();
                     }
                 } catch (err) {
-                    throw new Error ('Error submitting the form: ', err);
+                    console.log('Error submitting the form: ', err);
                 }                
             }
         }
