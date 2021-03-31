@@ -2,7 +2,7 @@
 (function($) {
     $(document).ready(function () {
 
-        const EVENT_NAME = 'Event'; // change for every page
+        const EVENT_NAME = 'Wedding'; // change for every page
 
         // API Calls ===================================================
         
@@ -123,7 +123,7 @@
          */
         async function populateVenueHeader (fb) {
             const venueHeaderDom = document.getElementById('venueHeader');
-            venueHeaderDom.innerHTML = `${replaceHash(fb.content.both.location)}`;
+            venueHeaderDom.innerHTML = `${replaceHash(fb.content.wedding.location)}`;
         }
 
         /**
@@ -131,7 +131,7 @@
          */
         async function populateInvitationContent (fb) {
             const inviteHeaderDom = document.getElementById('invitationContent');
-            inviteHeaderDom.innerHTML = `${replaceHash(fb.content.both.invite)}`;
+            inviteHeaderDom.innerHTML = `${replaceHash(fb.content.wedding.invite)}`;
         }
 
         /**
@@ -305,7 +305,7 @@
 
             // Call chat submission
             $('#wishForm').submit(onChatFormSubmission);
-            console.log('Loaded - Wedding, Reception...');
+            console.log('Loaded - Wedding...');
         }
 
         // call main method

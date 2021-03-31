@@ -36,16 +36,17 @@ export class MessageService {
 
     /**
      * API call to store a new chat message
-     * @parms { name, message }
+     * @parms { name, message, event, isAttending }
      * @returns Promise <any>
      */
     saveMessage (input) {
         // console.log(`${this.logger} - storing message - ${JSON.stringify(input)}`.help);
         const data = { 
-            message: input.message, 
             date: firebase.database.ServerValue.TIMESTAMP,
-            like: 0, 
-            name: input.name 
+            event: input.event,
+            isAttending: input.isAttending, 
+            message: input.message, 
+            name: input.name
         };   
         return new Promise((resolve, reject)=>{
             setTimeout(()=>{

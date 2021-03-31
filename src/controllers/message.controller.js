@@ -20,7 +20,8 @@ export class MessageController {
     validatePayload (req) {
         console.log(`${this.logger} - Validating Payload`.info);
         return !req.body.name || req.body.name === '' ||
-            !req.body.message || req.body.message === '';
+            !req.body.message || req.body.message === '' ||
+            !req.body.event || req.body.event === '';
     }
 
     /**
@@ -51,10 +52,12 @@ export class MessageController {
         try {
             await this.messageService.saveMessage ({
                 name: req.body.name,
-                message: req.body.message
+                message: req.body.message,
+                event: req.body.event,
+                isAttending: req.body.isAttending ? req.body.isAttending : false
             });
             console.log(`${this.logger} - New Record added`.success);
-            return res.status(201).send('New Record Added');
+            return res.status(201).send({status: 'New Record Added'});
         } catch (err) {            
             console.log(`${this.logger} Internal Server error: ${JSON.stringify(err)}`.error);
             return res.sendStatus(500);

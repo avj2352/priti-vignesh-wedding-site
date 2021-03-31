@@ -35,6 +35,115 @@ h3#invitationContent {
     width: 10%;
 }
 
+.validationText {
+    color:rgb(255, 234, 50);
+    display: none;
+}
+
+#successMsg {
+    display: none;
+}
+
+.chat-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border: 2px solid white;
+    background-color: rgba(255,255,255, 0.1);
+    border-radius: 5px;
+    height: 80vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    box-shadow: 1px 1px 8px 6px rgba(0,0,0,0.41);
+    -webkit-box-shadow: 1px 1px 8px 6px rgba(0,0,0,0.41);
+    -moz-box-shadow: 1px 1px 8px 6px rgba(0,0,0,0.41);
+}
+
+.chat-container .loading-screen {
+    display: block;
+    position: absolute;
+    margin: auto;
+    border: 2px solid white;
+    background-color: rgba(255,255,255, 0.3);
+    border-radius: 15px;
+    padding: 5px 25px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    box-shadow: 1px 1px 8px 6px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 1px 1px 8px 6px rgba(0,0,0,0.2);
+    -moz-box-shadow: 1px 1px 8px 6px rgba(0,0,0,0.2);
+}
+
+.chat-container .chat-box {
+    border: 1px dashed white;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin: 10px 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: 1px 1px 8px 6px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 1px 1px 8px 6px rgba(0,0,0,0.2);
+    -moz-box-shadow: 1px 1px 8px 6px rgba(0,0,0,0.2);
+}
+
+.chat-container .chat-box p {
+    /* border: 1px solid red; */
+    margin: 0;
+}
+
+.chat-container .chat-box p:nth-child(1) {
+    text-align: left;
+}
+
+.chat-container .chat-box p:nth-child(1)::before {
+    content: "\" ";
+}
+
+.chat-container .chat-box p:nth-child(1)::after {
+    content: " \"";
+}
+
+.chat-container .chat-box p:nth-child(2),
+.chat-container .chat-box p:nth-child(3) {
+    text-align: right;
+}
+
+/**
+* Scrollbar Design
+*/
+
+/*
+ *  STYLE 2
+ */
+
+ .chat-container::-webkit-scrollbar-track
+ {
+     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+     border-radius: 10px;
+     background-color: #F5F5F5;
+ }
+ 
+ .chat-container::-webkit-scrollbar
+ {
+     width: 8px;
+     background-color: #F5F5F5;
+ }
+ 
+ .chat-container::-webkit-scrollbar-thumb
+ {
+     border-radius: 10px;
+     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+     background-color: #c4c4c4;
+ }
+
 @media(min-width: 799px) {
     .quick_links_section {
         /* border: 1px solid green; */
