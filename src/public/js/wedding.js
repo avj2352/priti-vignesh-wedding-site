@@ -305,7 +305,7 @@
 
             // Call chat submission
             $('#wishForm').submit(onChatFormSubmission);
-            console.log('Loaded - Wedding, Reception...');
+            console.log('Loaded - Wedding...');
         }
 
         // call main method
