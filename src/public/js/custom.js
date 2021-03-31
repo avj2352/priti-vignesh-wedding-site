@@ -41,6 +41,17 @@
             return promise;
         }
 
+
+        /**
+         * API call to fetch data from Firebase
+         * @returns Promise<any>
+         */
+        async function fetchChatMessages () {
+            const request = await fetch('/messages');
+            const data = await request.val();
+            return data;                       
+        }
+
         // HELPER FUNCTIONS ============================================
         
         /**
@@ -52,6 +63,14 @@
         function replaceHash (content, domType) {
             if (!domType) domType = '<br/>';
             return content.replaceAll('#', domType);
+        }
+
+        /**
+         * @param {*} messageObject
+         * @returns Array
+         */
+        function returnMessagesArray (messageObject) {
+            return Object.values(messageObject);
         }
 
         /**
@@ -135,7 +154,45 @@
             // link map
         }
 
+
+        /**
+         * Populate chat content
+         */
+        async function populateChatContent (fb) {
+            const chatContainerDom = document.getElementById('chatReadSection');
+            const chatList = returnMessagesArray(fb.messages);
+            // console.log('Chat list is: ', chatList);
+            if (chatList && chatList.length > 0) {
+                resetChatContainer();
+                chatList.map(i => {
+                    chatContainerDom.appendChild(createChatBox(i));
+                });            
+            }
+        }
+
         // CHAT RELATED scripts ============================================
+
+
+        /**
+         * @param {*} message
+         * @returns HTMLElement <div>
+         */
+        function createChatBox (msg) {
+            const chatBox = document.createElement('div');
+            chatBox.setAttribute('class', 'chat-box');
+            const wishText = document.createElement('p');
+            wishText.innerText = msg.message;
+            const nameText = document.createElement('p');
+            nameText.innerText = msg.name;
+            chatBox.appendChild(wishText);
+            chatBox.appendChild(nameText);
+            if (msg.isAttending) {
+                const attendText = document.createElement('p');
+                attendText.innerText = `is attending the ${msg.event}`;
+                chatBox.appendChild(attendText);
+            }
+            return chatBox;
+        }
 
         /**
          * Function to validate the input fields
@@ -166,6 +223,38 @@
             return $("#successMsg").show();
         }
 
+
+        /**
+         * Function - show loading screen
+         * @returns null
+         */
+        function showLoadingScreen () {
+            const chatContainerDom = document.getElementById('chatReadSection');
+            const loadingDom = document.createElement('div');
+            loadingDom.setAttribute('class', 'loading-screen');
+            loadingDom.innerHTML = 'Loading Wishes...';
+            chatContainerDom.appendChild(loadingDom);
+        }
+
+        /**
+         * Function - hide loading screen
+         * @returns null
+         */
+        function hideLoadingScreen () {
+            const chatContainerDom = document.getElementById('chatReadSection');
+            const loadingDom = document.querySelector('#chatReadSection>div.loading-screen');
+            chatContainerDom.removeChild(loadingDom);
+        }
+
+        /**
+         * Function - resetChatContainer
+         * @returns null
+         */
+        function resetChatContainer () {
+            const chatContainerDom = document.getElementById('chatReadSection');
+            chatContainerDom.innerHTML = '';
+        }
+
         /**
          * Submit Chat - Post Message to Firebase
          */
@@ -185,8 +274,12 @@
                     isAttending: checkboxDom.checked
                 };
                 try {
+                    hideLoadingScreen(); showLoadingScreen();
                     const result = await postChatMessage(payload);
-                    if (result) return displaySuccess();
+                    if (result) {
+                        await populateChatContent(await getFirebaseContent());
+                        return displaySuccess();
+                    }
                 } catch (err) {
                     throw new Error ('Error submitting the form: ', err);
                 }                
@@ -204,6 +297,7 @@
             populateDateFields(fb);
             populateScriptureContent(fb);
             populateVenueHeader(fb);
+            populateChatContent(fb);
             populateInvitationContent(fb);
             populateEventAddressContent(fb, 'wedding');
             populateEventAddressContent(fb, 'lunch');
