@@ -15,19 +15,19 @@
 ## Both
 
 ```html
-"Shruthi Astakar Shekar # <small> D/o Mr. A.V. Shekar & Mrs. A.S. Nagamani </small> # <small> with </small> # Sudheer Sanapati # <small> S/o Mr. Balakrishna Sanapati & Mrs. Rupavathi Sanapati </small> # # cordially invite you to their wedding # to be solemnized on # <p/> # Friday, 23rd April 2021 at 11:00 A.M # held at, # Richmond Town Methodist Church # <small>Kingston Road, Bengaluru</small> # <p/> # followed by lunch at 1:30 PM onwards # held at, # Poornima Convention Centre # <small> Jayanagar, Bengaluru </small> # <p/> # You are also invited for the Reception # on # Friday, 23rd April 2021, 7:00 pm - 9:30 pm # held at, # Poornima Convention Centre # <small> Jayanagar, Bengaluru </small>"
+"Shruthi Astakar Shekar # <small> D/o Mr. A.V. Shekar & Mrs. A.S. Nagamani </small> # <small> with </small> # Sudheer Sanapati # <small> S/o Mr. Balakrishna Sanapati & Mrs. Rupavathi Sanapati </small> # # cordially invite you to their wedding # to be solemnized on # <p/> # Friday, 23rd April 2021 at 11:00 A.M # held at, Poornima Convention Centre # <small> Jayanagar, Bengaluru </small> # <p/> # followed by lunch at 1:30 PM onwards # <p/> # You are also invited for the Reception # on # Friday, 23rd April 2021, 6:00 pm - 8:30 pm # held at, # Poornima Convention Centre # <small> Jayanagar, Bengaluru </small>"
 ```
 
 ## Wedding
 
 ```html
-"Shruthi Astakar Shekar # <small> D/o Mr. A.V. Shekar & Mrs. A.S. Nagamani </small> # <small> with </small> # Sudheer Sanapati # <small> S/o Mr. Balakrishna Sanapati & Mrs. Rupavathi Sanapati </small> # # cordially invite you to their wedding # to be solemnized on # <p/> # Friday, 23rd April 2021 at 11:00 A.M # held at, # Richmond Town Methodist Church # <small>Kingston Road, Bengaluru</small> # <p/> # followed by lunch at 1:30 PM onwards # held at, # Poornima Convention Centre # <small> Jayanagar, Bengaluru </small> # <p/>"
+"Shruthi Astakar Shekar # <small> D/o Mr. A.V. Shekar & Mrs. A.S. Nagamani </small> # <small> with </small> # Sudheer Sanapati # <small> S/o Mr. Balakrishna Sanapati & Mrs. Rupavathi Sanapati </small> # # cordially invite you to their wedding # to be solemnized on # <p/> # Friday, 23rd April 2021 at 11:00 A.M # held at, Poornima Convention Centre # <small> Jayanagar, Bengaluru </small> # <p/> # followed by lunch at 1:30 PM onwards # <p/>"
 ```
 
 ## Reception
 
 ```html
-"Shruthi Astakar Shekar # <small> D/o Mr. A.V. Shekar & Mrs. A.S. Nagamani </small> # <small> with </small> # Sudheer Sanapati # <small> S/o Mr. Balakrishna Sanapati & Mrs. Rupavathi Sanapati </small> # cordially invite you to their reception # on # Friday, 23rd April 2021, 7:00 pm - 9:30 pm # held at, # Poornima Convention Centre # <small> Jayanagar, Bengaluru </small>
+"Shruthi Astakar Shekar # <small> D/o Mr. A.V. Shekar & Mrs. A.S. Nagamani </small> # <small> with </small> # Sudheer Sanapati # <small> S/o Mr. Balakrishna Sanapati & Mrs. Rupavathi Sanapati </small> # cordially invite you to their reception # on # Friday, 23rd April 2021, 6:00 pm - 8:30 pm # held at, # Poornima Convention Centre # <small> Jayanagar, Bengaluru </small>
 ```
 
 # Location
@@ -35,13 +35,13 @@
 ## Both
 
 ```html
-"Wedding: # Richmond Town Methodist Church # <small>Kingston Road, Bengaluru</small> # <p/> # Reception: # Poornima Convention Center # <small>Jayanagar, Bengaluru</small>"
+"Wedding & Lunch: # Poornima Convention Center # <small>Jayanagar, Bengaluru</small>" # <p/>"
 ```
 
 ## Wedding
 
 ```html
-"Wedding: # Richmond Town Methodist Church # <small>Kingston Road, Bengaluru</small> # <p/> # Lunch: # Poornima Convention Center # <small>Jayanagar, Bengaluru</small>"
+"Wedding & Lunch: # Poornima Convention Center # <small>Jayanagar, Bengaluru</small>" # <p/>"
 ```
 
 ## Wedding
